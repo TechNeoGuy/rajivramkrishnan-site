@@ -33,10 +33,46 @@ const moments = [
   },
 ]
 
-function Moment({ moment, index }) {
+function MomentMobile({ moment, index }) {
+  const ref = useScrollReveal()
+  return (
+    <div ref={ref} className="reveal" style={{
+      display: 'flex', gap: '20px', marginBottom: '40px',
+      transitionDelay: `${index * 0.05}s`,
+    }}>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', flexShrink: 0 }}>
+        <div style={{
+          width: '12px', height: '12px', borderRadius: '50%',
+          background: 'var(--accent)', border: '2px solid var(--bg-secondary)',
+          boxShadow: '0 0 0 2px var(--accent)', flexShrink: 0, marginTop: '6px',
+        }} />
+        {index < 5 && <div style={{ width: '1px', flex: 1, background: 'var(--border)', marginTop: '8px' }} />}
+      </div>
+      <div style={{ paddingBottom: '8px' }}>
+        <span style={{
+          fontFamily: "'Inter', system-ui, sans-serif", fontSize: '0.68rem',
+          letterSpacing: '0.15em', textTransform: 'uppercase',
+          color: 'var(--accent)', display: 'block', marginBottom: '6px',
+        }}>
+          {moment.period}
+        </span>
+        <h3 style={{
+          fontFamily: "'DM Serif Display', Georgia, serif", fontSize: '1.15rem',
+          fontWeight: 400, color: 'var(--text-primary)', marginBottom: '10px',
+        }}>
+          {moment.title}
+        </h3>
+        <p style={{ fontSize: '0.95rem', lineHeight: 1.8, color: 'var(--text-secondary)', margin: 0 }}>
+          {moment.story}
+        </p>
+      </div>
+    </div>
+  )
+}
+
+function MomentDesktop({ moment, index }) {
   const ref = useScrollReveal()
   const isEven = index % 2 === 0
-
   const dot = (
     <div style={{
       width: '14px', height: '14px', borderRadius: '50%',
@@ -44,13 +80,11 @@ function Moment({ moment, index }) {
       boxShadow: '0 0 0 2px var(--accent)', flexShrink: 0, margin: '4px 0',
     }} />
   )
-
   const line = <div style={{ width: '1px', flex: 1, background: 'var(--border)' }} />
-
   const content = (
     <div style={{ padding: isEven ? '0 40px 60px 0' : '0 0 60px 40px', textAlign: isEven ? 'right' : 'left' }}>
       <span style={{
-        fontFamily: "'Source Serif 4', Georgia, serif", fontSize: '0.72rem',
+        fontFamily: "'Inter', system-ui, sans-serif", fontSize: '0.72rem',
         letterSpacing: '0.15em', textTransform: 'uppercase',
         color: 'var(--accent)', display: 'block', marginBottom: '10px',
       }}>
@@ -58,18 +92,16 @@ function Moment({ moment, index }) {
       </span>
       <h3 style={{
         fontFamily: "'DM Serif Display', Georgia, serif", fontSize: '1.3rem',
-        fontWeight: 600, color: 'var(--text-primary)', marginBottom: '14px',
+        fontWeight: 400, color: 'var(--text-primary)', marginBottom: '14px',
       }}>
         {moment.title}
       </h3>
-      <p style={{ fontSize: '0.97rem', lineHeight: 1.85, color: 'var(--text-secondary)' }}>
+      <p style={{ fontSize: '0.97rem', lineHeight: 1.85, color: 'var(--text-secondary)', margin: 0 }}>
         {moment.story}
       </p>
     </div>
   )
-
   const spacer = <div style={{ padding: '0 40px 60px' }} />
-
   return (
     <div ref={ref} className="reveal" style={{
       display: 'grid', gridTemplateColumns: '1fr 48px 1fr',
@@ -89,16 +121,14 @@ export default function Journey() {
 
   return (
     <section id="journey" style={{
-      background: 'var(--bg-secondary)',
-      padding: '100px 40px',
+      background: 'var(--bg-secondary)', padding: '100px 40px',
       borderTop: '1px solid var(--border)',
       position: 'relative', overflow: 'hidden',
     }}>
       <div style={{
         position: 'absolute', inset: 0, zIndex: 0,
         backgroundImage: 'url(/bg-journey.jpg)',
-        backgroundSize: 'cover', backgroundPosition: 'center',
-        opacity: 0.08,
+        backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.08,
       }} aria-hidden="true" />
 
       <div style={{ maxWidth: '1100px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
@@ -119,15 +149,21 @@ export default function Journey() {
           </p>
         </div>
 
-        <div className="journey-timeline">
-          {moments.map((moment, i) => <Moment key={i} moment={moment} index={i} />)}
+        <div className="journey-desktop">
+          {moments.map((moment, i) => <MomentDesktop key={i} moment={moment} index={i} />)}
+        </div>
+        <div className="journey-mobile">
+          {moments.map((moment, i) => <MomentMobile key={i} moment={moment} index={i} />)}
         </div>
       </div>
 
       <style>{`
+        .journey-mobile { display: none; }
+        .journey-desktop { display: block; }
         @media (max-width: 768px) {
           #journey { padding: 70px 24px !important; }
-          .journey-timeline > div { grid-template-columns: 24px 1fr !important; }
+          .journey-mobile { display: block; }
+          .journey-desktop { display: none; }
         }
       `}</style>
     </section>

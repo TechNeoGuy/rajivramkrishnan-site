@@ -73,7 +73,7 @@ export default function Contact() {
             fontSize: '1.05rem', lineHeight: 1.85, color: '#D4C0AC',
             marginBottom: '36px', maxWidth: '400px',
           }}>
-            Whether you have a role in mind, a technology problem to think through, or simply want to connect - send a message using the form. I read everything and respond to every genuine inquiry.
+            Whether you have a role in mind, a technology problem to think through, or simply want to connect - send a message using the form below, or start a live chat using the bubble at the bottom right of the screen. I read everything and respond to every genuine inquiry.
           </p>
 
           <a href="https://linkedin.com/in/rajivramkrishnan" target="_blank" rel="noopener noreferrer"
