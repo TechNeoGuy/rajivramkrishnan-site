@@ -13,6 +13,7 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import PrivacyModal from './components/PrivacyModal'
 import TermsModal from './components/TermsModal'
+import TelegramBubble from './components/TelegramBubble'
 import './index.css'
 
 function AppInner() {
@@ -37,6 +38,7 @@ function AppInner() {
       <Footer onOpenPrivacy={() => setPrivacyOpen(true)} onOpenTerms={() => setTermsOpen(true)} />
       {privacyOpen && <PrivacyModal onClose={() => setPrivacyOpen(false)} />}
       {termsOpen && <TermsModal onClose={() => setTermsOpen(false)} />}
+      <TelegramBubble />
     </div>
   )
 }
