@@ -44,7 +44,7 @@ export default function Contact() {
 
   return (
     <section id="contact" aria-label="Contact" style={{
-      background: 'var(--bg-dark)', padding: '100px 40px',
+      background: '#2C1810', padding: '100px 40px',
     }}>
       <div style={{
         maxWidth: '1100px', margin: '0 auto',
@@ -70,7 +70,7 @@ export default function Contact() {
           </h2>
           <div style={{ width: '48px', height: '2px', background: 'var(--accent)', marginBottom: '28px' }} />
           <p style={{
-            fontSize: '1.05rem', lineHeight: 1.85, color: '#A89880',
+            fontSize: '1.05rem', lineHeight: 1.85, color: '#D4C0AC',
             marginBottom: '36px', maxWidth: '400px',
           }}>
             Whether you have a role in mind, a technology problem to think through, or simply want to connect - send a message using the form. I read everything and respond to every genuine inquiry.
@@ -80,10 +80,10 @@ export default function Contact() {
             style={{
               display: 'inline-flex', alignItems: 'center', gap: '12px',
               fontFamily: "'Source Serif 4', Georgia, serif", fontSize: '0.95rem',
-              color: '#E8C4B0', textDecoration: 'none', transition: 'color 0.2s',
+              color: '#F0E4D4', textDecoration: 'none', transition: 'color 0.2s',
             }}
             onMouseEnter={e => e.currentTarget.style.color = 'var(--accent)'}
-            onMouseLeave={e => e.currentTarget.style.color = '#E8C4B0'}
+            onMouseLeave={e => e.currentTarget.style.color = '#F0E4D4'}
           >
             <span style={{
               width: '36px', height: '36px', borderRadius: '50%',
@@ -111,7 +111,7 @@ export default function Contact() {
               }}>
                 Thank you.
               </p>
-              <p style={{ color: '#A89880', fontSize: '1rem', lineHeight: 1.7 }}>
+              <p style={{ color: '#D4C0AC', fontSize: '1rem', lineHeight: 1.7 }}>
                 Your message has been received. I will get back to you genuinely and promptly.
               </p>
             </div>
@@ -127,7 +127,7 @@ export default function Contact() {
                   <label htmlFor={`contact-${field.name}`} style={{
                     display: 'block', fontFamily: "'Source Serif 4', Georgia, serif",
                     fontSize: '0.78rem', letterSpacing: '0.1em',
-                    textTransform: 'uppercase', color: '#8A7A65', marginBottom: '8px',
+                    textTransform: 'uppercase', color: '#C4A888', marginBottom: '8px',
                   }}>
                     {field.label}
                   </label>
@@ -150,7 +150,7 @@ export default function Contact() {
                 <label htmlFor="contact-message" style={{
                   display: 'block', fontFamily: "'Source Serif 4', Georgia, serif",
                   fontSize: '0.78rem', letterSpacing: '0.1em',
-                  textTransform: 'uppercase', color: '#8A7A65', marginBottom: '8px',
+                  textTransform: 'uppercase', color: '#C4A888', marginBottom: '8px',
                 }}>
                   Your message
                 </label>
