@@ -12,13 +12,32 @@ const links = [
 
 function RRLogo() {
   return (
-    <svg viewBox="0 0 200 48" width="160" height="38" xmlns="http://www.w3.org/2000/svg" aria-label="Rajiv Ramkrishnan logo">
-      <text x="0" y="36" fontFamily="'Playfair Display', Georgia, serif" fontWeight="700" fontSize="38" fill="currentColor" letterSpacing="-1">R</text>
-      <text x="22" y="36" fontFamily="'Playfair Display', Georgia, serif" fontWeight="700" fontSize="38" fill="#B85E38" letterSpacing="-1">R</text>
-      <line x1="46" y1="28" x2="46" y2="38" stroke="currentColor" strokeOpacity="0.25" strokeWidth="1"/>
-      <text x="51" y="31" fontFamily="'Inter', system-ui, sans-serif" fontWeight="500" fontSize="10" fill="currentColor">Rajiv Ramkrishnan</text>
-      <text x="51" y="43" fontFamily="'Inter', system-ui, sans-serif" fontWeight="400" fontSize="8" fill="#C4622E" letterSpacing="1.8">RESOURCEFUL. RELIABLE.</text>
-    </svg>
+    <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+      <div style={{
+        width: '38px', height: '38px', borderRadius: '50%',
+        background: '#C4622E', display: 'flex', alignItems: 'center',
+        justifyContent: 'center', flexShrink: 0,
+      }}>
+        <span style={{
+          fontFamily: "'DM Serif Display', Georgia, serif",
+          fontSize: '17px', color: '#FDFAF6',
+          letterSpacing: '-0.5px', lineHeight: 1,
+        }}>RR</span>
+      </div>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '1px' }}>
+        <span style={{
+          fontFamily: "'DM Serif Display', Georgia, serif",
+          fontSize: '16px', color: 'var(--text-primary)',
+          lineHeight: 1, letterSpacing: '0.01em',
+        }}>Rajiv Ramkrishnan</span>
+        <span style={{
+          fontFamily: "'Inter', system-ui, sans-serif",
+          fontSize: '7.5px', letterSpacing: '0.2em',
+          textTransform: 'uppercase', color: '#C4622E',
+          lineHeight: 1,
+        }}>Resourceful · Reliable</span>
+      </div>
+    </div>
   )
 }
 
@@ -47,7 +66,7 @@ export default function Nav() {
     <nav role="navigation" aria-label="Main navigation" style={{
       position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100,
       backdropFilter: 'blur(10px)',
-      backgroundColor: theme === 'dark' ? 'rgba(28,19,10,0.96)' : 'rgba(250,247,242,0.96)',
+      backgroundColor: theme === 'dark' ? 'rgba(28,19,10,0.96)' : 'rgba(253,250,246,0.96)',
       borderBottom: scrolled ? '1px solid var(--border)' : '1px solid transparent',
       boxShadow: scrolled ? 'var(--shadow-sm)' : 'none',
       transition: 'all 0.3s ease',
@@ -57,12 +76,12 @@ export default function Nav() {
         display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: '72px',
       }}>
         <a href="#top" onClick={(e) => handleLinkClick(e, '#top')}
-          style={{ color: 'var(--text-primary)', textDecoration: 'none', display: 'flex', alignItems: 'center' }}
+          style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}
           aria-label="Home">
           <RRLogo />
         </a>
 
-        <ul style={{ display: 'flex', gap: '24px', listStyle: 'none', alignItems: 'center' }} className="nav-desktop">
+        <ul style={{ display: 'flex', gap: '28px', listStyle: 'none', alignItems: 'center' }} className="nav-desktop">
           {links.map(link => (
             <li key={link.href}>
               <a href={link.href} onClick={(e) => handleLinkClick(e, link.href)} style={{
