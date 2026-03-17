@@ -29,7 +29,7 @@ export default function About() {
         <div>
           <span className="section-label">About</span>
           <h2 ref={ref1} className="reveal" style={{
-            fontFamily: "'Playfair Display', Georgia, serif",
+            fontFamily: "'DM Serif Display', Georgia, serif",
             fontSize: 'clamp(1.9rem, 3.5vw, 2.8rem)', fontWeight: 400,
             lineHeight: 1.2, color: 'var(--text-primary)', marginBottom: '16px',
           }}>
@@ -78,7 +78,7 @@ export default function About() {
               position: 'absolute', top: '20px', right: '-12px',
               background: 'var(--accent)', color: 'var(--bg-primary)',
               padding: '10px 18px', borderRadius: '4px',
-              fontFamily: "'Lora', Georgia, serif", fontSize: '0.75rem',
+              fontFamily: "'Source Serif 4', Georgia, serif", fontSize: '0.75rem',
               letterSpacing: '0.08em', textTransform: 'uppercase',
               writingMode: 'vertical-rl', textOrientation: 'mixed',
             }}>
@@ -91,7 +91,7 @@ export default function About() {
             borderLeft: '3px solid var(--accent)',
           }}>
             <p style={{
-              fontFamily: "'Playfair Display', Georgia, serif", fontStyle: 'italic',
+              fontFamily: "'DM Serif Display', Georgia, serif", fontStyle: 'italic',
               fontSize: '0.95rem', color: 'var(--text-primary)', margin: 0, lineHeight: 1.6,
             }}>
               "Accountability, Integrity, Resourcefulness, Reliability - these are not values I aspire to. They are how I actually work."

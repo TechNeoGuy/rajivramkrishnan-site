@@ -55,7 +55,7 @@ function Lane({ lane, index }) {
       }}
     >
       <span style={{
-        fontFamily: "'Playfair Display', Georgia, serif",
+        fontFamily: "'DM Serif Display', Georgia, serif",
         fontSize: '3rem',
         fontWeight: 700,
         color: '#E8C4B0',
@@ -67,7 +67,7 @@ function Lane({ lane, index }) {
       </span>
 
       <h3 style={{
-        fontFamily: "'Playfair Display', Georgia, serif",
+        fontFamily: "'DM Serif Display', Georgia, serif",
         fontSize: '1.4rem',
         fontWeight: 700,
         color: '#1A0E04',
@@ -77,7 +77,7 @@ function Lane({ lane, index }) {
       </h3>
 
       <p style={{
-        fontFamily: "'Lora', Georgia, serif",
+        fontFamily: "'Source Serif 4', Georgia, serif",
         fontStyle: 'italic',
         fontSize: '0.9rem',
         color: '#C4704B',
@@ -102,7 +102,7 @@ function Lane({ lane, index }) {
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginBottom: '24px' }}>
           {lane.tags.map(tag => (
             <span key={tag} style={{
-              fontFamily: "'Lora', Georgia, serif",
+              fontFamily: "'Source Serif 4', Georgia, serif",
               fontSize: '0.72rem',
               letterSpacing: '0.08em',
               textTransform: 'uppercase',
@@ -128,7 +128,7 @@ function Lane({ lane, index }) {
             }}
             className="underline-link"
             style={{
-              fontFamily: "'Lora', Georgia, serif",
+              fontFamily: "'Source Serif 4', Georgia, serif",
               fontSize: '0.82rem',
               letterSpacing: '0.06em',
               textTransform: 'uppercase',
@@ -148,7 +148,7 @@ function Lane({ lane, index }) {
             rel="noopener noreferrer"
             className="underline-link"
             style={{
-              fontFamily: "'Lora', Georgia, serif",
+              fontFamily: "'Source Serif 4', Georgia, serif",
               fontSize: '0.82rem',
               letterSpacing: '0.06em',
               textTransform: 'uppercase',
@@ -179,7 +179,7 @@ export default function HowIHelp() {
         <div style={{ marginBottom: '64px' }}>
           <span className="section-label">How I Can Help</span>
           <h2 ref={titleRef} className="reveal" style={{
-            fontFamily: "'Playfair Display', Georgia, serif",
+            fontFamily: "'DM Serif Display', Georgia, serif",
             fontSize: 'clamp(1.9rem, 3.5vw, 2.8rem)',
             fontWeight: 400,
             color: '#1A0E04',

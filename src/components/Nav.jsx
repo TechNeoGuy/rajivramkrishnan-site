@@ -16,8 +16,8 @@ function RRLogo() {
       <text x="0" y="36" fontFamily="'Playfair Display', Georgia, serif" fontWeight="700" fontSize="38" fill="currentColor" letterSpacing="-1">R</text>
       <text x="22" y="36" fontFamily="'Playfair Display', Georgia, serif" fontWeight="700" fontSize="38" fill="#B85E38" letterSpacing="-1">R</text>
       <line x1="46" y1="28" x2="46" y2="38" stroke="currentColor" strokeOpacity="0.25" strokeWidth="1"/>
-      <text x="51" y="31" fontFamily="'Lora', Georgia, serif" fontWeight="500" fontSize="10" fill="currentColor">Rajiv Ramkrishnan</text>
-      <text x="51" y="43" fontFamily="'Lora', Georgia, serif" fontWeight="400" fontSize="8" fill="#B85E38" letterSpacing="1.8">RESOURCEFUL. RELIABLE.</text>
+      <text x="51" y="31" fontFamily="'Inter', system-ui, sans-serif" fontWeight="500" fontSize="10" fill="currentColor">Rajiv Ramkrishnan</text>
+      <text x="51" y="43" fontFamily="'Inter', system-ui, sans-serif" fontWeight="400" fontSize="8" fill="#C4622E" letterSpacing="1.8">RESOURCEFUL. RELIABLE.</text>
     </svg>
   )
 }
@@ -66,7 +66,7 @@ export default function Nav() {
           {links.map(link => (
             <li key={link.href}>
               <a href={link.href} onClick={(e) => handleLinkClick(e, link.href)} style={{
-                fontFamily: "'Lora', Georgia, serif", fontSize: '0.78rem',
+                fontFamily: "'Inter', system-ui, sans-serif", fontSize: '0.78rem',
                 letterSpacing: '0.06em', textTransform: 'uppercase',
                 color: 'var(--text-light)', textDecoration: 'none', transition: 'color 0.2s ease',
               }}
@@ -111,7 +111,7 @@ export default function Nav() {
           {links.map(link => (
             <a key={link.href} href={link.href} onClick={(e) => handleLinkClick(e, link.href)} style={{
               display: 'block', padding: '12px 0',
-              fontFamily: "'Lora', Georgia, serif", fontSize: '1rem',
+              fontFamily: "'Inter', system-ui, sans-serif", fontSize: '1rem',
               color: 'var(--text-primary)', textDecoration: 'none',
               borderBottom: '1px solid var(--border)',
             }}>

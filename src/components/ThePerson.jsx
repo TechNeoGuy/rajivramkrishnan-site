@@ -29,7 +29,7 @@ function BeliefCard({ belief, index }) {
     }}>
       <span style={{ display: 'block', color: 'var(--accent)', fontSize: '1rem', marginBottom: '14px' }}>✦</span>
       <h3 style={{
-        fontFamily: "'Playfair Display', Georgia, serif", fontSize: '1.1rem',
+        fontFamily: "'DM Serif Display', Georgia, serif", fontSize: '1.1rem',
         fontWeight: 600, color: 'var(--text-primary)', marginBottom: '12px',
       }}>
         {belief.title}
@@ -55,7 +55,7 @@ export default function ThePerson() {
         <div style={{ textAlign: 'center', marginBottom: '72px' }}>
           <span className="section-label">The Person</span>
           <h2 ref={titleRef} className="reveal" style={{
-            fontFamily: "'Playfair Display', Georgia, serif",
+            fontFamily: "'DM Serif Display', Georgia, serif",
             fontSize: 'clamp(1.9rem, 3.5vw, 2.8rem)',
             fontWeight: 400, color: 'var(--text-primary)',
           }}>
@@ -69,7 +69,7 @@ export default function ThePerson() {
         }} className="person-grid">
           <div ref={textRef} className="reveal">
             <p style={{
-              fontFamily: "'Playfair Display', Georgia, serif", fontStyle: 'italic',
+              fontFamily: "'DM Serif Display', Georgia, serif", fontStyle: 'italic',
               fontSize: '1.35rem', lineHeight: 1.6, color: 'var(--text-primary)',
               marginBottom: '28px', borderLeft: '3px solid var(--accent)', paddingLeft: '24px',
             }}>
@@ -100,7 +100,7 @@ export default function ThePerson() {
               }} />
             </div>
             <p style={{
-              fontFamily: "'Lora', Georgia, serif", fontStyle: 'italic',
+              fontFamily: "'Source Serif 4', Georgia, serif", fontStyle: 'italic',
               fontSize: '0.85rem', color: 'var(--text-muted)',
               textAlign: 'center', marginTop: '28px',
             }}>

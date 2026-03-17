@@ -50,14 +50,14 @@ function Moment({ moment, index }) {
   const content = (
     <div style={{ padding: isEven ? '0 40px 60px 0' : '0 0 60px 40px', textAlign: isEven ? 'right' : 'left' }}>
       <span style={{
-        fontFamily: "'Lora', Georgia, serif", fontSize: '0.72rem',
+        fontFamily: "'Source Serif 4', Georgia, serif", fontSize: '0.72rem',
         letterSpacing: '0.15em', textTransform: 'uppercase',
         color: 'var(--accent)', display: 'block', marginBottom: '10px',
       }}>
         {moment.period}
       </span>
       <h3 style={{
-        fontFamily: "'Playfair Display', Georgia, serif", fontSize: '1.3rem',
+        fontFamily: "'DM Serif Display', Georgia, serif", fontSize: '1.3rem',
         fontWeight: 600, color: 'var(--text-primary)', marginBottom: '14px',
       }}>
         {moment.title}
@@ -105,14 +105,14 @@ export default function Journey() {
         <div style={{ textAlign: 'center', marginBottom: '80px' }}>
           <span className="section-label">The Journey</span>
           <h2 ref={titleRef} className="reveal" style={{
-            fontFamily: "'Playfair Display', Georgia, serif",
+            fontFamily: "'DM Serif Display', Georgia, serif",
             fontSize: 'clamp(1.9rem, 3.5vw, 2.8rem)', fontWeight: 400,
             color: 'var(--text-primary)', marginBottom: '16px',
           }}>
             A story told in <em style={{ color: 'var(--accent)' }}>moments</em>
           </h2>
           <p style={{
-            fontFamily: "'Lora', Georgia, serif", fontSize: '1rem',
+            fontFamily: "'Source Serif 4', Georgia, serif", fontSize: '1rem',
             color: 'var(--text-light)', maxWidth: '480px', margin: '0 auto',
           }}>
             Not a timeline of titles and companies - a thread of experiences that shaped how I think and work.

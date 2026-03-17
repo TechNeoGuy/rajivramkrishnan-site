@@ -37,7 +37,7 @@ export default function Contact() {
     width: '100%', padding: '14px 18px',
     background: 'rgba(250,247,242,0.08)',
     border: '1px solid rgba(250,247,242,0.2)',
-    borderRadius: '6px', fontFamily: "'Lora', Georgia, serif",
+    borderRadius: '6px', fontFamily: "'Source Serif 4', Georgia, serif",
     fontSize: '1rem', color: '#FAF7F2', outline: 'none',
     transition: 'border-color 0.2s', lineHeight: 1.6,
   }
@@ -54,14 +54,14 @@ export default function Contact() {
 
         <div>
           <span style={{
-            fontFamily: "'Lora', Georgia, serif", fontSize: '0.72rem',
+            fontFamily: "'Source Serif 4', Georgia, serif", fontSize: '0.72rem',
             letterSpacing: '0.18em', textTransform: 'uppercase',
             color: 'var(--accent)', display: 'block', marginBottom: '16px',
           }}>
             Get in touch
           </span>
           <h2 ref={titleRef} className="reveal" style={{
-            fontFamily: "'Playfair Display', Georgia, serif",
+            fontFamily: "'DM Serif Display', Georgia, serif",
             fontSize: 'clamp(1.9rem, 3.5vw, 2.8rem)', fontWeight: 400,
             color: '#FAF7F2', lineHeight: 1.2, marginBottom: '24px',
           }}>
@@ -79,7 +79,7 @@ export default function Contact() {
           <a href="https://linkedin.com/in/rajivramkrishnan" target="_blank" rel="noopener noreferrer"
             style={{
               display: 'inline-flex', alignItems: 'center', gap: '12px',
-              fontFamily: "'Lora', Georgia, serif", fontSize: '0.95rem',
+              fontFamily: "'Source Serif 4', Georgia, serif", fontSize: '0.95rem',
               color: '#E8C4B0', textDecoration: 'none', transition: 'color 0.2s',
             }}
             onMouseEnter={e => e.currentTarget.style.color = 'var(--accent)'}
@@ -105,7 +105,7 @@ export default function Contact() {
               borderRadius: '8px', padding: '40px', textAlign: 'center',
             }}>
               <p style={{
-                fontFamily: "'Playfair Display', Georgia, serif",
+                fontFamily: "'DM Serif Display', Georgia, serif",
                 fontStyle: 'italic', fontSize: '1.4rem',
                 color: '#FAF7F2', marginBottom: '12px',
               }}>
@@ -125,7 +125,7 @@ export default function Contact() {
               ].map(field => (
                 <div key={field.name}>
                   <label htmlFor={`contact-${field.name}`} style={{
-                    display: 'block', fontFamily: "'Lora', Georgia, serif",
+                    display: 'block', fontFamily: "'Source Serif 4', Georgia, serif",
                     fontSize: '0.78rem', letterSpacing: '0.1em',
                     textTransform: 'uppercase', color: '#8A7A65', marginBottom: '8px',
                   }}>
@@ -148,7 +148,7 @@ export default function Contact() {
 
               <div>
                 <label htmlFor="contact-message" style={{
-                  display: 'block', fontFamily: "'Lora', Georgia, serif",
+                  display: 'block', fontFamily: "'Source Serif 4', Georgia, serif",
                   fontSize: '0.78rem', letterSpacing: '0.1em',
                   textTransform: 'uppercase', color: '#8A7A65', marginBottom: '8px',
                 }}>
@@ -170,7 +170,7 @@ export default function Contact() {
 
               {error && (
                 <p style={{
-                  fontFamily: "'Lora', Georgia, serif", fontSize: '0.88rem',
+                  fontFamily: "'Source Serif 4', Georgia, serif", fontSize: '0.88rem',
                   color: '#F0997B', margin: 0, lineHeight: 1.6,
                 }}>
                   {error}
@@ -179,7 +179,7 @@ export default function Contact() {
 
               <button type="submit" disabled={submitting} style={{
                 padding: '15px 36px', background: 'var(--accent)',
-                color: '#FAF7F2', fontFamily: "'Lora', Georgia, serif",
+                color: '#FAF7F2', fontFamily: "'Source Serif 4', Georgia, serif",
                 fontSize: '0.85rem', fontWeight: 500,
                 letterSpacing: '0.08em', textTransform: 'uppercase',
                 border: 'none', borderRadius: '6px',

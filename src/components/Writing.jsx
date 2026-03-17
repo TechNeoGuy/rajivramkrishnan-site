@@ -42,14 +42,14 @@ export default function Writing() {
         <div style={{ marginBottom: '64px' }}>
           <span className="section-label">Writing</span>
           <h2 ref={titleRef} className="reveal" style={{
-            fontFamily: "'Playfair Display', Georgia, serif",
+            fontFamily: "'DM Serif Display', Georgia, serif",
             fontSize: 'clamp(1.9rem, 3.5vw, 2.8rem)', fontWeight: 400,
             color: 'var(--text-primary)', maxWidth: '560px',
           }}>
             Thinking out loud about <em style={{ color: 'var(--accent)' }}>technology and people</em>
           </h2>
           <p style={{
-            fontFamily: "'Lora', Georgia, serif", fontSize: '1rem',
+            fontFamily: "'Source Serif 4', Georgia, serif", fontSize: '1rem',
             color: 'var(--text-light)', maxWidth: '500px', marginTop: '16px',
           }}>
             More pieces coming. For now, one that captures something I think about a lot.
@@ -63,21 +63,21 @@ export default function Writing() {
           <div style={{ background: 'var(--bg-dark)', padding: '40px 48px' }}>
             <div style={{ display: 'flex', gap: '16px', alignItems: 'center', marginBottom: '20px' }}>
               <span style={{
-                fontFamily: "'Lora', Georgia, serif", fontSize: '0.72rem',
+                fontFamily: "'Source Serif 4', Georgia, serif", fontSize: '0.72rem',
                 letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--accent)',
               }}>
                 {post.date}
               </span>
               <span style={{ color: 'var(--text-muted)', fontSize: '0.8rem' }}>·</span>
               <span style={{
-                fontFamily: "'Lora', Georgia, serif", fontSize: '0.72rem',
+                fontFamily: "'Source Serif 4', Georgia, serif", fontSize: '0.72rem',
                 letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--text-muted)',
               }}>
                 {post.readTime}
               </span>
             </div>
             <h3 style={{
-              fontFamily: "'Playfair Display', Georgia, serif", fontSize: '1.7rem',
+              fontFamily: "'DM Serif Display', Georgia, serif", fontSize: '1.7rem',
               fontWeight: 700, color: '#FAF7F2', lineHeight: 1.25, margin: 0,
             }}>
               {post.title}
@@ -86,7 +86,7 @@ export default function Writing() {
 
           <div style={{ padding: '36px 48px' }}>
             <p style={{
-              fontFamily: "'Playfair Display', Georgia, serif", fontStyle: 'italic',
+              fontFamily: "'DM Serif Display', Georgia, serif", fontStyle: 'italic',
               fontSize: '1.1rem', lineHeight: 1.7, color: 'var(--text-primary)',
               marginBottom: '28px', paddingBottom: '28px',
               borderBottom: '1px solid var(--border)',
@@ -108,7 +108,7 @@ export default function Writing() {
             )}
 
             <button onClick={() => setExpanded(!expanded)} style={{
-              fontFamily: "'Lora', Georgia, serif", fontSize: '0.82rem',
+              fontFamily: "'Source Serif 4', Georgia, serif", fontSize: '0.82rem',
               letterSpacing: '0.08em', textTransform: 'uppercase',
               color: 'var(--accent)', background: 'none', border: 'none',
               cursor: 'pointer', padding: 0,
@@ -132,7 +132,7 @@ export default function Writing() {
         </div>
 
         <p style={{
-          fontFamily: "'Lora', Georgia, serif", fontStyle: 'italic',
+          fontFamily: "'Source Serif 4', Georgia, serif", fontStyle: 'italic',
           fontSize: '0.9rem', color: 'var(--text-muted)', marginTop: '32px',
         }}>
           More writing coming. Topics on the list: value stream mapping in real IT operations, what good change management actually looks like, and the quiet skill of asking the right question first.

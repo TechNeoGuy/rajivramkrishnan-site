@@ -43,7 +43,7 @@ export default function Hero() {
       }} className="hero-grid">
         <div>
           <span style={{
-            fontFamily: "'Lora', Georgia, serif", fontSize: '0.72rem',
+            fontFamily: "'Source Serif 4', Georgia, serif", fontSize: '0.72rem',
             letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--accent)',
             display: 'block', marginBottom: '24px',
             opacity: wordsVisible > 0 ? 1 : 0, transition: 'opacity 0.6s ease',
@@ -52,7 +52,7 @@ export default function Hero() {
           </span>
 
           <h1 style={{
-            fontFamily: "'Playfair Display', Georgia, serif",
+            fontFamily: "'DM Serif Display', Georgia, serif",
             fontSize: 'clamp(2.6rem, 5.5vw, 4.2rem)', fontWeight: 700,
             lineHeight: 1.1, color: 'var(--text-primary)', marginBottom: '28px',
           }}>
@@ -71,7 +71,7 @@ export default function Hero() {
           </h1>
 
           <p style={{
-            fontFamily: "'Playfair Display', Georgia, serif",
+            fontFamily: "'DM Serif Display', Georgia, serif",
             fontSize: '1.15rem', fontStyle: 'italic', lineHeight: 1.75,
             color: 'var(--text-light)', maxWidth: '460px', marginBottom: '44px',
             opacity: wordsVisible >= words.length ? 1 : 0,
@@ -94,7 +94,7 @@ export default function Hero() {
             <a href="#contact"
               onClick={e => { e.preventDefault(); document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' }) }}
               style={{
-                fontFamily: "'Lora', Georgia, serif", fontSize: '0.85rem',
+                fontFamily: "'Source Serif 4', Georgia, serif", fontSize: '0.85rem',
                 letterSpacing: '0.06em', textTransform: 'uppercase',
                 color: 'var(--text-light)', textDecoration: 'none',
                 borderBottom: '1px solid var(--border)', paddingBottom: '2px',
@@ -136,11 +136,11 @@ export default function Hero() {
             borderRadius: '6px', padding: '14px 20px', boxShadow: 'var(--shadow-md)',
           }}>
             <p style={{
-              fontFamily: "'Playfair Display', Georgia, serif", fontStyle: 'italic',
+              fontFamily: "'DM Serif Display', Georgia, serif", fontStyle: 'italic',
               fontSize: '0.95rem', color: 'var(--accent)', margin: 0, lineHeight: 1.4,
             }}>Ottawa, Canada</p>
             <p style={{
-              fontFamily: "'Lora', Georgia, serif", fontSize: '0.75rem',
+              fontFamily: "'Source Serif 4', Georgia, serif", fontSize: '0.75rem',
               color: 'var(--text-muted)', margin: 0, letterSpacing: '0.05em',
             }}>Open to the right opportunity</p>
           </div>
